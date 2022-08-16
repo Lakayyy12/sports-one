@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/customborder2"
+    tools:context=".AboutPage">
+
+        <ImageView
+            android:id="@+id/nav1"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/customborder3"
+            android:src="@drawable/navbar"
+            android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:id="@+id/abt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="ABOUT " />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ban1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="20dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/customborder2"
+                android:scaleType="fitXY"
+                android:src="@drawable/banner1" />
+
+            <TextView
+                android:id="@+id/abb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about1"
+                android:layout_below="@id/ban1"
+                android:layout_marginHorizontal="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/bk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/abb"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="#FF6D00"
+                android:text="BACK"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+
+</RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
